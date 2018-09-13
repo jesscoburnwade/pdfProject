@@ -15,7 +15,6 @@ bb.extend(app, {
 
 app.use(cors({origin:true,credentials: true}));
 
-
 app.listen(8000);
 
 let db;
