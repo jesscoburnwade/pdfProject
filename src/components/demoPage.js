@@ -24,7 +24,7 @@ export default class Demo extends Component {
     fileRead() {
         this.setState({pdf: null});
         PdfJs.getDocument(BASE_URL + "read/" + document.getElementById("fileRead").value)
-            .then((pdf) => this.setState({pdf: pdf}));
+            .then((pdf) => this.setState({pdf: pdf})).catch(e => console.log(e));
     }
 
     fileSearch() {
